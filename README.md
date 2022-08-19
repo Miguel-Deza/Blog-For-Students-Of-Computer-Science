@@ -13,5 +13,13 @@ Comentarios
 
 Todos los usuarios registrados pueden publicar comentarios en las publicaciones del blog. Los comentarios pueden ser eliminados por el usuario que los creó y el usuario administrador.
 
+Programación estructurada (PE)
+
+La programación estructurada esta compuesta por un conjunto de técnicas que han ido evolucionando aumentando considerablemente la productividad del programa reduciendo el tiempo de depuración y mantenimiento del mismo.
+
+Programación concurrente
+
+Este tipo de programación se utiliza cuando tenemos que realizar varias acciones a la vez.
+
 https://user-images.githubusercontent.com/78099176/182956245-cc774297-f4fd-4ca9-a19c-96ce24abd397.mp4
 
