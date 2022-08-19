@@ -39,6 +39,42 @@ def login():
     return render_template("login.html", form=form, current_user=current_user)
 ```
 
+### Cookbook
+Un Cookbook en el contexto de la programación es una colección de pequeños programas que demuestran un concepto de programación particular. El método Cookbook es el proceso de aprender un lenguaje de programación mediante la creación de un repositorio de pequeños programas que implementan conceptos de programación específicos.
+Por ejemplo, utilizamos este estilo en la creación de formularios por el programador futuro, para que puedan ser reutilizados con mayor facilidad y practicidad.
+
+#### Creación de un formulario con método post
+```python
+class CreatePostForm(FlaskForm):
+    title = StringField("Blog Post Title", validators=[DataRequired()])
+    subtitle = StringField("Subtitle", validators=[DataRequired()])
+    img_url = StringField("Blog Image URL", validators=[DataRequired(), URL()])
+    body = CKEditorField("Blog Content", validators=[DataRequired()])
+    submit = SubmitField("Submit Post")
+```
+#### Creación de un formulario de registro con método post
+```python
+class RegisterForm(FlaskForm):
+    email = StringField("Email", validators=[DataRequired()])
+    password = PasswordField("Password", validators=[DataRequired()])
+    name = StringField("Name", validators=[DataRequired()])
+    submit = SubmitField("Sign Me Up!")
+```
+
+#### Creación de logeo de un usuario con método post
+```python
+class LoginForm(FlaskForm):
+    email = StringField("Email", validators=[DataRequired()])
+    password = PasswordField("Password", validators=[DataRequired()])
+    submit = SubmitField("Let Me In!")
+```
+
+#### Creación de formulario de comentario de usuario con método post
+```python
+class CommentForm(FlaskForm):
+    comment_text = CKEditorField("Comment", validators=[DataRequired()])
+    submit = SubmitField("Submit Comment")
+```
 
 https://user-images.githubusercontent.com/78099176/182956245-cc774297-f4fd-4ca9-a19c-96ce24abd397.mp4
 
