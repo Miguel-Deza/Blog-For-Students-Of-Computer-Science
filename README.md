@@ -1,5 +1,8 @@
 # Blog For Students Of Computer Science
-## Características:
+## ⚔️ Propósito del proyecto ⚔️
+El propósito del presente proyecto es realizar un software que ayude a los estudiantes de las Ciencias de la computación a estar informados acerca de los últimos eventos que se están desarrollando a través de la semana de la Computación. Este software ayudará positivamente al desarrollo progresivo de la semana de la Computación y también mostrará información necesaria para el estudiante de la Universidad, Que desee acercarse a uno de sus temas de interés.
+
+## ⚔️ Funcionalidades ⚔️
 ### Registro de usuario / inicio de sesión / cierre de sesión
 
 Los usuarios pueden registrarse y posteriormente iniciar sesión y cerrar sesión. Regístrese con un nombre de usuario, correo electrónico y contraseña. No importa si el correo electrónico es real o falso, siempre que tenga un formato de correo electrónico típico. La contraseña está codificada y salada.
@@ -12,7 +15,7 @@ Actualmente, solo el usuario con estado de administrador (yo) puede crear, edita
 
 Todos los usuarios registrados pueden publicar comentarios en las publicaciones del blog. Los comentarios pueden ser eliminados por el usuario que los creó y el usuario administrador.
 
-## Laboratorio Nro 09 - Estilos Utilizados
+## ⚔️ Laboratorio Nro 09 - Estilos Utilizados ⚔️
 ### Codegolf
 Codegolf es un tipo de competencia recreativa de programación de computadoras en la que los participantes se esfuerzan por lograr el código fuente más corto posible que resuelva un problema determinado.
 Por ejemplo: Utilizamos el método validate_on_submit en vez de crear más código implementando la validación de acuerdo al método que se ha utilizado, ya sea GET o POST.
@@ -307,7 +310,7 @@ if __name__ == "__main__":
 
 ```
 
-## Laboratorio Nro 10 - Codificación Legible
+## ⚔️ Laboratorio Nro 10 - Codificación Legible ⚔️
 
 ### Espaciado entre bloques de código
 Al desarrollar es importante que se use una correcta separación entre líneas, algo que será de gran utilidad para identificar de forma rápida bloques (o conjuntos) de código, compuestos de líneas que deberían estar relacionadas entre sí por una dependencia funcional. Debemos tener en cuenta que para el cerebro humano es más fácil recordar y aprender ideas si estas están asociadas a esquemas o formas visuales y la agrupación de líneas genera formas que, junto con el hecho anterior, de forma inconsciente facilita la comprensión del código al lector.
@@ -396,7 +399,7 @@ if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
 ```
 
-## Laboratorio Nro 11 - Principios SOLID utilizados
+## ⚔️ Principios SOLID aplicados ⚔️
 SOLID es un acrónimo acuñado por Robert C.Martin en el cual se representan los cinco principios básicos de la programación orientada a objetos. La intención de seguir estos principios es eliminar malos diseños, evitar la refactorización y construir un código más eficiente y fácil de mantener. 
 
 ### Single Responsability Principle (SRP) (Principio de responsabilidad única) 
