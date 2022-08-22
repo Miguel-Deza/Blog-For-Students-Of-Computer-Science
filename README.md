@@ -1,3 +1,5 @@
+https://user-images.githubusercontent.com/78099176/182956245-cc774297-f4fd-4ca9-a19c-96ce24abd397.mp4
+
 # Blog For Students Of Computer Science
 ## ⚔️ Propósito del proyecto ⚔️
 El propósito del presente proyecto es realizar un software que ayude a los estudiantes de las Ciencias de la computación a estar informados acerca de los últimos eventos que se están desarrollando a través de la semana de la Computación. Este software ayudará positivamente al desarrollo progresivo de la semana de la Computación y también mostrará información necesaria para el estudiante de la Universidad, Que desee acercarse a uno de sus temas de interés.
@@ -449,5 +451,5 @@ if __name__ == "__main__":
 ```
 
 
-https://user-images.githubusercontent.com/78099176/182956245-cc774297-f4fd-4ca9-a19c-96ce24abd397.mp4
+
 
