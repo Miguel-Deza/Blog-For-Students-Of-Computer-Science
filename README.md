@@ -184,6 +184,34 @@ class Comment(db.Model):
 db.create_all()
 ```
 
+## ⚔️ Principios SOLID aplicados ⚔️
+SOLID es un acrónimo acuñado por Robert C.Martin en el cual se representan los cinco principios básicos de la programación orientada a objetos. La intención de seguir estos principios es eliminar malos diseños, evitar la refactorización y construir un código más eficiente y fácil de mantener. 
+
+### Single Responsability Principle (SRP) (Principio de responsabilidad única) 
+Este principio establece que un componente o clase debe tener una responsabilidad única, sencilla y concreta. Esto simplifica el código al evitar que existan clases que cumplan con múltiples funciones, las cuales son difíciles de memorizar y muchas veces significan una pérdida de tiempo buscando qué parte del código hace qué función. 
+```python
+@app.route('/')
+def get_all_posts():
+    posts = BlogPost.query.all()
+    return render_template("index.html", all_posts=posts, current_user=current_user)
+```
+### Dependency Inversion Principle (DIP) (Principio de inversión de dependencias) 
+Este principio establece que los módulos de alto nivel no deben de depender de los de bajo nivel. En ambos casos deben depender de las abstracciones. Alto nivel se refiere a operaciones cuya naturaleza es más amplia o abarca un contexto más general y bajo nivel son componentes individuales más específicos.  
+```python
+from forms import LoginForm, RegisterForm, CreatePostForm, CommentForm
+```
+### Interface Segretation Principle (ISP) (Principio de segregación de interfaz) 
+Este principio establece que los clientes no deben ser forzados a depender de interfaces que no utilizan. Es importante que cada clase implemente las interfaces que va a utilizar. De este modo, agregar nuevas funcionalidades o modificar las existentes será más fácil. 
+```python
+@app.route('/')
+def get_all_posts():
+    posts = BlogPost.query.all()
+    return render_template("index.html", all_posts=posts, current_user=current_user)
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)
+```
+
 ## ⚔️ Estilo de Arquitectura Monolitico ⚔️
 Una arquitectura monolítica es el modelo unificado tradicional para el diseño de un programa de software. Monolítico, en este contexto, significa "compuesto todo en una sola pieza". Según el diccionario de Cambridge, el adjetivo monolítico también significa tanto "demasiado grande" como "no se puede cambiar". Lo aplicamos al utilizar todo nuestro programa principal en un solo documento python.
 
@@ -413,34 +441,6 @@ def delete_post(post_id):
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
 
-```
-
-## ⚔️ Principios SOLID aplicados ⚔️
-SOLID es un acrónimo acuñado por Robert C.Martin en el cual se representan los cinco principios básicos de la programación orientada a objetos. La intención de seguir estos principios es eliminar malos diseños, evitar la refactorización y construir un código más eficiente y fácil de mantener. 
-
-### Single Responsability Principle (SRP) (Principio de responsabilidad única) 
-Este principio establece que un componente o clase debe tener una responsabilidad única, sencilla y concreta. Esto simplifica el código al evitar que existan clases que cumplan con múltiples funciones, las cuales son difíciles de memorizar y muchas veces significan una pérdida de tiempo buscando qué parte del código hace qué función. 
-```python
-@app.route('/')
-def get_all_posts():
-    posts = BlogPost.query.all()
-    return render_template("index.html", all_posts=posts, current_user=current_user)
-```
-### Dependency Inversion Principle (DIP) (Principio de inversión de dependencias) 
-Este principio establece que los módulos de alto nivel no deben de depender de los de bajo nivel. En ambos casos deben depender de las abstracciones. Alto nivel se refiere a operaciones cuya naturaleza es más amplia o abarca un contexto más general y bajo nivel son componentes individuales más específicos.  
-```python
-from forms import LoginForm, RegisterForm, CreatePostForm, CommentForm
-```
-### Interface Segretation Principle (ISP) (Principio de segregación de interfaz) 
-Este principio establece que los clientes no deben ser forzados a depender de interfaces que no utilizan. Es importante que cada clase implemente las interfaces que va a utilizar. De este modo, agregar nuevas funcionalidades o modificar las existentes será más fácil. 
-```python
-@app.route('/')
-def get_all_posts():
-    posts = BlogPost.query.all()
-    return render_template("index.html", all_posts=posts, current_user=current_user)
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
 ```
 
 
