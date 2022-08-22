@@ -213,9 +213,9 @@ if __name__ == "__main__":
 ```
 
 ## ⚔️ Conceptos DDD aplicados ⚔️
-### Repositories. Para la manipulación de datos, estos presentan un ciclo de vida que se gestiona mediante la herramienta ORM sqlalchemy
-### Entities. El lenguaje de programación orientada a objetos nos permite manipular los datos a un nivel de abstración de Entidades.
-### Modules. El sistema presenta modularización de sus funcionalidades para poder gestionar los recursos de forma eficiente.
+2.- Repositories. Para la manipulación de datos, estos presentan un ciclo de vida que se gestiona mediante la herramienta ORM sqlalchemy
+2.- Entities. El lenguaje de programación orientada a objetos nos permite manipular los datos a un nivel de abstración de Entidades.
+3.- Modules. El sistema presenta modularización de sus funcionalidades para poder gestionar los recursos de forma eficiente.
 
 ## ⚔️ Estilo de Arquitectura Monolitico ⚔️
 Una arquitectura monolítica es el modelo unificado tradicional para el diseño de un programa de software. Monolítico, en este contexto, significa "compuesto todo en una sola pieza". Según el diccionario de Cambridge, el adjetivo monolítico también significa tanto "demasiado grande" como "no se puede cambiar". Lo aplicamos al utilizar todo nuestro programa principal en un solo documento python.
