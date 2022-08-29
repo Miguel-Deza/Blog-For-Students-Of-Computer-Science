@@ -4,6 +4,17 @@ https://user-images.githubusercontent.com/78099176/182956245-cc774297-f4fd-4ca9-
 ## ⚔️ Propósito del proyecto ⚔️
 El propósito del presente proyecto es realizar un software que ayude a los estudiantes de las Ciencias de la computación a estar informados acerca de los últimos eventos que se están desarrollando a través de la semana de la Computación. Este software ayudará positivamente al desarrollo progresivo de la semana de la Computación y también mostrará información necesaria para el estudiante de la Universidad, Que desee acercarse a uno de sus temas de interés.
 
+## ⚔️ Esfuerzo de cada integrante ⚔️
+### HENRY YANQUI
+Realice la conexion de base de datos sqlite, la configuracion de la tabla usuarios y el establecimiento de patrones generales de acuerdo a la documentacion de las diferentes librerias aplicadas.
+
+### ALAIN CRUZ
+Realice la creacion de rutas para el proyecto, ademas de la identificacion del usuario que se encuentra actualmente en el proyecto, validacion y hasheo de passwords.
+
+### MIGUEL DEZA
+Realice la creacion y administracion del motor de plantillas JINJA y el deploy de la aplicacion en heroku, transformacion de sqlite a postgress-heroku
+
+
 ## ⚔️ Funcionalidades ⚔️
 ### Registro de usuario / inicio de sesión / cierre de sesión
 
